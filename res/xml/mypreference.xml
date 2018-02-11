@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/options_menu_Preferences" >
+
+    <PreferenceCategory android:title="@string/pref_menu_category_contacts" >
+        <CheckBoxPreference
+            android:key="checkBoxPref_Contactos_Desc" 
+            android:title="@string/pref_menu_category_contacts_ordenar_Alfabetico" />
+        <ListPreference
+            android:key="filtrosPref_Contactos"
+            android:entries="@array/filtros_contacto"
+            android:entryValues="@array/filtros_contacto_values"
+            android:title="@string/pref_menu_category_contacts_filtrar" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_menu_category_history" >
+        <CheckBoxPreference
+            android:key="checkBoxPref_historial_Desc" 
+            android:title="@string/pref_menu_category_history_ordenar_Alfabetico" />
+
+        <ListPreference
+            android:key="filtrosPref_historial"
+            android:entries="@array/filtros_historial"
+            android:entryValues="@array/filtros_historial_values"
+            android:title="@string/pref_menu_category_history_filtrar" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

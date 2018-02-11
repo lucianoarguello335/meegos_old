@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tdam2013.g14"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="18" />
+
+    <!-- Permiso -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tdam2013.g14.PantallaPrincipal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tdam2013.g14.SetPreference"
+            android:label="@string/title_activity_preference" >
+        </activity>
+        <activity
+            android:name="com.tdam2013.g14.PantallaHistorialContacto"
+            android:label="@string/title_activity_pantalla_historial_contacto" >
+        </activity>
+        <activity
+            android:name="com.tdam2013.g14.PantallaMeeGos"
+            android:label="@string/title_activity_pantalla_mee_gos" >
+        </activity>
+    </application>
+
+</manifest>
